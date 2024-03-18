@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>frontpage</title>
+    <style>
+
+        body{
+            background-image: url(Sign_up.jpg);
+            background-size: cover;
+        }
+        form{
+            margin-top: 50px;
+        }
+        label.habib{
+            color:whitesmoke;
+        }
+        label.bank{
+            color:whitesmoke;
+        }
+        label.limited{
+            color: whitesmoke;
+        }
+        header{
+        font-family: 'Roboto', sans-serif; 
+        margin-top: -7px;
+        margin-left: -6px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:rgb(6, 95, 184);
+        text-align: center;
+        font-size: 35px;
+        animation-name: first;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        }
+      @keyframes first {
+        from{
+            
+               width:100px;
+               padding: 0px;
+              
+        } to{
+            
+                 width:1300px;
+                 padding: 30px;
+        }
+      }
+        footer{
+        font-size: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 15px;
+        margin-top: 61px;
+        padding: 10px;
+        text-align: center;
+        background-color: transparent;
+        color: rgb(6, 95, 184);
+        animation-name: second;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        }
+        @keyframes second {
+            0% {
+    transform: scale(0) rotate(0deg);
+  }
+  60% {
+    transform: scale(0.6) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+      }
+     
+        #faqs{
+            margin-left: 0px;
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            font-size: 20px;
+        }
+        #faqs:hover{
+           
+            color:rgb(3, 43, 3);
+            
+        }
+        #security{
+           margin-left: 150px;
+           transition-property: background-color;
+            transition-duration: 0.5s ;
+            font-size: 20px;
+        }
+        #security:hover{
+            
+            color:rgb(3, 43, 3);
+        }
+        #feature{
+            margin-left: 150px;
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            font-size: 20px;
+        }
+        #feature:hover{
+           
+            color:rgb(3, 43, 3);
+            
+        }
+        #location{
+            margin-left: 150px;
+            transition-property: background-color;
+            transition-duration: 0.5s ;
+            font-size: 20px;
+        }
+        #location:hover{
+           
+            color:rgb(3, 43, 3);
+        }
+        #help{
+            margin-left: 150px;
+            transition-property: background-color;
+            transition-duration: 0.5s ;
+            font-size: 20px;
+        }
+        #help:hover{
+           
+            color:rgb(3, 43, 3);
+        }
+        #offer{
+            margin-left: 150px;
+            transition-property: background-color;
+            transition-duration: 0.5s ;
+            font-size: 20px;
+        }
+        #offer:hover{
+          
+            color:rgb(3, 43, 3);
+        }
+        .ainput{
+            border-style: groove;
+            border-color: white;
+            margin-top: 20px;
+            margin-left: 5px;
+            width:400px;
+            height: 35px;
+            border-radius: 4px;
+            outline: none;
+            box-sizing: border-box;
+            background: none;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        .ainput:focus ~ .inputLabel:before{
+            color: rgb(6, 95, 184);
+            top:-22px;
+            left:-380px;
+            z-index: 1;
+            transition: 0.2s ease;
+            font-size:14px;
+         }
+        .ainput:focus{
+            border: 2px solid rgb(6, 95, 184);
+        }
+        .inputLabel{
+            position: relative;
+        }
+        .inputLabel:before{
+            font-family: Arial, Helvetica, sans-serif;
+            content:"Username";
+            position:absolute;
+            color:rgb(90, 86, 86);
+            z-index: -1;
+            left:-380px;
+            top:0px;
+            transition: 0.1s ease;
+            box-sizing: border-box;
+        }
+
+        .binput{
+            border-style: groove;
+            border-color: white;
+            margin-top: 20px;
+            margin-left: 5px;
+            width:400px;
+            height: 35px;
+            border-radius: 4px;
+            outline: none;
+            box-sizing: border-box;
+            background: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .binput:focus ~ .inputLabel1:before{
+            color: rgb(6, 95, 184);
+            top:-22px;
+            left:-380px;
+            z-index: 1;
+            transition: 0.2s ease;
+            font-size:14px;
+         }
+        .binput:focus{
+            border: 2px solid rgb(6, 95, 184);
+        }
+        .inputLabel1{
+            position: relative;
+        }
+        .inputLabel1:before{
+            font-family: Arial, Helvetica, sans-serif;
+            content:"Password";
+            position:absolute;
+            color:rgb(90, 86, 86);
+            z-index: -1;
+            left:-380px;
+            top:0px;
+            transition: 0.1s ease;
+            box-sizing: border-box;
+        }
+        input.button{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            border-radius: 3px;
+            margin-left: 100px;
+            margin-top: 30px;
+            color: rgb(243, 243, 243);
+            border-style: none;
+            height: 30px;
+            width: 100px;
+        }
+        input.button1{
+            width: 100px;
+            height: 30px;
+            color: rgb(243, 243, 243);
+            border-style: none;
+            background-color: rgb(6, 95, 184);
+            border-radius: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a.icon{
+            
+            margin-top: 30px;
+            color: rgb(6, 95, 184);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        i{
+            
+            margin-top: 30px;
+           font-size: 25px;
+           color: rgb(6, 95, 184);
+        }
+        label.hr{
+            color:rgb(90, 86, 86);
+        padding-top: 100px;
+        margin-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        hr{
+            width: 400px;
+            margin-left: 10px;
+        }
+        label.follow{
+            color:rgb(90, 86, 86);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10px;
+        }
+        p.start{
+            color: rgb(6, 95, 184);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 65px;
+            font-size: 20px;
+        }
+        label.d{
+            color:rgb(90, 86, 86);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <label for="" class="habib">Habib</label>
+    <label for="" class="bank">Bank</label>
+    <label for="" class="limited">Limited</label>
+</header>
+    <br>
+    <form action="">
+        <p class="start">Welcome to HBL Digital Banking</p>
+        <label for=""class="d">Sign in or Join now to manage your personal finances</label>
+        <br>
+        <input type="email" class="ainput" name="username" required>
+        <label class="inputLabel"></label>
+        <br>
+        <input type="password" class="binput" name="password" required >
+        <label class="inputLabel1"></label>
+        <br>
+        <input class="button" type="submit" value="SignUp">
+        <input class="button1" type="submit" value="LogIn">
+        <hr>
+        <label for=""class="hr">Download HBL Mobile</label>
+        <i  class="fa-brands fa-google-play"></i> <a class="icon" href="https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Jun0122&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-pk-1003227-med-hasem-py-Evergreen-Jun0122-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700071429380597_creativeid_601100159720_device_c&gclid=Cj0KCQiApb2bBhDYARIsAChHC9tBXPtlpNt-GFEba7MydvG5YzNsT_cjWCVB9BGRRmEGXvwEUcTWWBIaAlzXEALw_wcB&gclsrc=aw.ds">Google play</a> 
+        <i  class="fa-brands fa-apple"></i> <a class="icon" href="https://www.apple.com/app-store/">App Store</a>
+        <br>
+        <hr> 
+        <label for="" class="follow">Follow us on  </label>
+        <i  class="fa-brands fa-facebook"></i> <a class="icon" href="https://www.facebook.com/">facebook</a> 
+        <i  class="fa-brands fa-instagram"></i> <a class="icon" href="https://www.instagram.com/">Instagram</a>
+        <i  class="fa-brands fa-linkedin"></i> <a class="icon" href="https://www.linkedin.com/">Linkedin</a> 
+        <i  class="fa-brands fa-twitter"></i> <a class="icon" href="https://twitter.com/">twitter</a>
+        <i  class="fa-brands fa-youtube"></i> <a class="icon" href="https://www.youtube.com/">Youtube</a>
+       
+    </form>
+     <br>
+    <footer>
+     <span class="faqs" id="faqs"> FAQs</span>
+     <span class="security" id="security"> Security</span>
+     <span class="location" id="location"> Locate Us </span>
+     <span class="offer" id="offer"> Offers</span>
+     <span class="feature" id="feature"> Feature</span>
+     <span class="help" id="help"> Help & Support</span>
+    
+    </footer>
+    
+</body>
+</html>
